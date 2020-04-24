@@ -35,7 +35,7 @@ int useItem::return_used_item_index (Entity* user) {
 
     while (looping) {
         for (unsigned int i = 0; i < user->items.size(); i++) {
-            std::cout << "[" << i << "] - " << user->items [i]->name << std::endl;
+            std::cout << "[" << i << "] - " << user->items [i]->name << ": " << user->items [i]->description << std::endl;
         }
         index = utility::integer_input ();
         if (index >= 0 && index < user->items.size ()) {

@@ -13,6 +13,12 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="include/skills" />
+					<Add directory="include/items" />
+					<Add directory="src/skills" />
+					<Add directory="include/statuses" />
+					<Add directory="include/entities" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +28,11 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include/entities" />
+					<Add directory="include/skills" />
+					<Add directory="include/items" />
+					<Add directory="src/skills" />
+					<Add directory="include/statuses" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +43,47 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/entities/Entity.h" />
+		<Unit filename="include/entities/Goblin.h" />
+		<Unit filename="include/entities/Human.h" />
+		<Unit filename="include/entities/Pixie.h" />
+		<Unit filename="include/items/Fireworks.h" />
+		<Unit filename="include/items/Herb.h" />
+		<Unit filename="include/items/Item.h" />
+		<Unit filename="include/items/iceShield.h" />
+		<Unit filename="include/skills/Attack.h" />
+		<Unit filename="include/skills/Dodge.h" />
+		<Unit filename="include/skills/Fire.h" />
+		<Unit filename="include/skills/Ice.h" />
+		<Unit filename="include/skills/Skill.h" />
+		<Unit filename="include/skills/resistFire.h" />
+		<Unit filename="include/skills/useItem.h" />
+		<Unit filename="include/statuses/Status.h" />
+		<Unit filename="include/statuses/dodgeStatus.h" />
+		<Unit filename="include/textGraphics.h" />
+		<Unit filename="include/utility.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/entities/Entity.cpp" />
+		<Unit filename="src/entities/Goblin.cpp" />
+		<Unit filename="src/entities/Human.cpp" />
+		<Unit filename="src/entities/Pixie.cpp" />
+		<Unit filename="src/items/Fireworks.cpp" />
+		<Unit filename="src/items/Herb.cpp" />
+		<Unit filename="src/items/Item.cpp" />
+		<Unit filename="src/items/iceShield.cpp" />
+		<Unit filename="src/skills/Attack.cpp" />
+		<Unit filename="src/skills/Dodge.cpp" />
+		<Unit filename="src/skills/Fire.cpp" />
+		<Unit filename="src/skills/Ice.cpp" />
+		<Unit filename="src/skills/Skill.cpp" />
+		<Unit filename="src/skills/resistFire.cpp" />
+		<Unit filename="src/skills/useItem.cpp" />
+		<Unit filename="src/statuses/Status.cpp" />
+		<Unit filename="src/statuses/dodgeStatus.cpp" />
+		<Unit filename="src/textGraphics.cpp" />
+		<Unit filename="src/utility.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
