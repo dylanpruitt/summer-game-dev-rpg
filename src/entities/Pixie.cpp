@@ -30,3 +30,13 @@ Pixie::~Pixie()
 void Pixie::fundraise_AI (Entity* player) {
 
 }
+
+void Pixie::AI (std::vector<Entity*> combatants) {
+    const int ATTACK = 0;
+
+    int target_index = target_random_enemy (combatants);
+    std::vector <Entity*> targets;
+    targets.push_back (combatants [target_index]);
+
+    this->skills [ATTACK]->use (this, targets);
+}

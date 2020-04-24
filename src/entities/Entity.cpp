@@ -42,29 +42,36 @@ void Entity::remove_status (std::string status_name) {
 }
 
 void Entity::damage (Entity* target, int amount, std::string type) {
-    int damage = amount + attack;
-
-    if (target->is_weak_to (type)) {
-        damage *= 1.5;
-        textGraphics::changeTextColor (textGraphics::colors::LIGHT_RED, textGraphics::colors::BLACK); std::cout << "WEAK";
-        textGraphics::changeTextColor (textGraphics::colors::WHITE, textGraphics::colors::BLACK); std::cout << "! ";
+    if (target->has_status("dodge")) {
+        std::cout << target->name;
+        textGraphics::changeTextColor (textGraphics::colors::LIGHT_YELLOW, textGraphics::colors::BLACK); std::cout << " dodged ";
+        textGraphics::changeTextColor (textGraphics::colors::WHITE, textGraphics::colors::BLACK); std::cout << "the attack!" << std::endl;
+        target->remove_status ("dodge");
     } else {
-        damage -= target->defense;
-    }
+        int damage = amount + attack;
 
-    if (target->is_resistant_to (type)) {
-        damage *= 0.5;
-        textGraphics::changeTextColor (textGraphics::colors::LIGHT_YELLOW, textGraphics::colors::BLACK); std::cout << "RESIST";
-        textGraphics::changeTextColor (textGraphics::colors::WHITE, textGraphics::colors::BLACK); std::cout << "! ";
-    }
+        if (target->is_weak_to (type)) {
+            damage *= 1.5;
+            textGraphics::changeTextColor (textGraphics::colors::LIGHT_RED, textGraphics::colors::BLACK); std::cout << "WEAK";
+            textGraphics::changeTextColor (textGraphics::colors::WHITE, textGraphics::colors::BLACK); std::cout << "! ";
+        } else {
+            damage -= target->defense;
+        }
 
-    if (damage > 0) {
-        std::cout << target->name + " took ";
-        textGraphics::changeTextColor (textGraphics::colors::LIGHT_RED, textGraphics::colors::BLACK); std::cout << damage;
-        textGraphics::changeTextColor (textGraphics::colors::WHITE, textGraphics::colors::BLACK); std::cout << " damage!" << std::endl;
-        target->health -= damage;
-    } else {
-        std::cout << target->name + " took no damage." << std::endl;
+        if (target->is_resistant_to (type)) {
+            damage *= 0.5;
+            textGraphics::changeTextColor (textGraphics::colors::LIGHT_YELLOW, textGraphics::colors::BLACK); std::cout << "RESIST";
+            textGraphics::changeTextColor (textGraphics::colors::WHITE, textGraphics::colors::BLACK); std::cout << "! ";
+        }
+
+        if (damage > 0) {
+            std::cout << target->name + " took ";
+            textGraphics::changeTextColor (textGraphics::colors::LIGHT_RED, textGraphics::colors::BLACK); std::cout << damage;
+            textGraphics::changeTextColor (textGraphics::colors::WHITE, textGraphics::colors::BLACK); std::cout << " damage!" << std::endl;
+            target->health -= damage;
+        } else {
+            std::cout << target->name + " took no damage." << std::endl;
+        }
     }
 }
 
