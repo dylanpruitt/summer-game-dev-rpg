@@ -14,6 +14,7 @@ Fireworks::~Fireworks()
 }
 
 void Fireworks::use (Entity* user, std::vector<Entity*> targets) {
+    Item::use(user, targets);
     const int BASE_DAMAGE = 1;
     int number_of_attacks = utility::random_bounded(0, 3);
 

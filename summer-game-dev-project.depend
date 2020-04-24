@@ -112,9 +112,10 @@
 1587751190 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\items\fireworks.h
 	"Item.h"
 
-1587751442 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\items\fireworks.cpp
+1587754757 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\items\fireworks.cpp
 	"Fireworks.h"
 	"utility.h"
+	<iostream>
 
 1587752202 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\skills\useitem.cpp
 	"useItem.h"
@@ -127,4 +128,10 @@
 
 1587751714 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\skills\useitem.h
 	"Skill.h"
+
+1587754803 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\items\herb.cpp
+	"Herb.h"
+
+1587754689 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\items\herb.h
+	"Item.h"
 
