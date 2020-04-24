@@ -1,0 +1,102 @@
+# depslib dependency file v1.0
+1587702466 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\entities\entity.cpp
+	"entities/Entity.h"
+	"skills/Skill.h"
+	"textGraphics.h"
+	"utility.h"
+	<iostream>
+
+1587702452 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\entities\entity.h
+	<vector>
+	<string>
+	<random>
+	"statuses/Status.h"
+
+1586559496 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\statuses\status.h
+	<string>
+	<vector>
+
+1587748093 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\skills\skill.h
+	<string>
+	<vector>
+	"entities/Entity.h"
+	"textGraphics.h"
+
+1586560228 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\textgraphics.h
+
+1587704048 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\utility.h
+	<random>
+	<ctime>
+
+1587748650 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\entities\pixie.cpp
+	"entities/Pixie.h"
+	"skills/Skill.h"
+	"skills/Attack.h"
+	"utility.h"
+
+1587702492 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\entities\pixie.h
+	"Entity.h"
+
+1586561678 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\skills\megablaze.cpp
+	"skills/megaBlaze.h"
+
+1586561029 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\skills\megablaze.h
+	"Skill.h"
+
+1587748108 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\skills\resistfire.cpp
+	"skills/resistFire.h"
+
+1587344030 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\skills\resistfire.h
+	"Skill.h"
+
+1587748603 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\skills\skill.cpp
+	"skills/Skill.h"
+	"utility.h"
+	<iostream>
+
+1587343896 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\skills\trickcard.cpp
+	"skills/trickCard.h"
+	<iostream>
+
+1587343438 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\skills\trickcard.h
+	"Skill.h"
+
+1586560176 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\statuses\status.cpp
+	"statuses/Status.h"
+
+1586560237 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\textgraphics.cpp
+	"textGraphics.h"
+	<windows.h>
+
+1587704048 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\utility.cpp
+	"utility.h"
+	<iostream>
+	<climits>
+	<thread>
+	<math.h>
+	<random>
+
+1587748438 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\main.cpp
+	<iostream>
+	<random>
+	"Game.h"
+	"entities/Pixie.h"
+	"utility.h"
+
+1587702028 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\game.h
+	<vector>
+	"entities/Entity.h"
+
+1587702143 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\game.cpp
+	"Game.h"
+	"skills/Skill.h"
+	"textGraphics.h"
+	"utility.h"
+	<iostream>
+
+1587748817 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\skills\attack.cpp
+	"Attack.h"
+
+1587748053 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\skills\attack.h
+	"Skill.h"
+

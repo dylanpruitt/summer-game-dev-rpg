@@ -1,0 +1,16 @@
+#include "Item.h"
+
+Item::Item()
+{
+    //ctor
+}
+
+Item::~Item()
+{
+    //dtor
+}
+
+void Item::use (Entity* user, std::vector <Entity*> targets) {
+    std::cout << user->name << " used " << name << "!" << std::endl;
+    user->energy -= energy_cost;
+}
