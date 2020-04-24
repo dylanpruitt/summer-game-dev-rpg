@@ -28,10 +28,10 @@
 	<random>
 	<ctime>
 
-1587748650 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\entities\pixie.cpp
+1587758074 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\entities\pixie.cpp
 	"entities/Pixie.h"
-	"skills/Skill.h"
 	"skills/Attack.h"
+	"skills/Ice.h"
 	"utility.h"
 
 1587756164 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\entities\pixie.h
@@ -77,16 +77,20 @@
 	<math.h>
 	<random>
 
-1587756017 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\main.cpp
+1587758138 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\main.cpp
 	<iostream>
 	<random>
 	"Game.h"
 	"entities/Pixie.h"
+	"entities/Goblin.h"
+	"entities/Human.h"
 	"items/Fireworks.h"
 	"items/Herb.h"
+	"items/iceShield.h"
 	"skills/useItem.h"
 	"skills/Dodge.h"
 	"utility.h"
+	"textGraphics.h"
 
 1587702028 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\game.h
 	<vector>
@@ -150,4 +154,40 @@
 
 1587755942 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\statuses\dodgestatus.cpp
 	"dodgeStatus.h"
+
+1587756482 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\skills\ice.h
+	"Skill.h"
+
+1587756704 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\skills\ice.cpp
+	"Ice.h"
+
+1587756845 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\items\iceshield.h
+	"Item.h"
+
+1587756922 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\items\iceshield.cpp
+	"iceShield.h"
+
+1587757205 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\skills\fire.cpp
+	"Fire.h"
+
+1587757172 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\skills\fire.h
+	"Skill.h"
+
+1587757509 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\entities\goblin.h
+	"Entity.h"
+	<vector>
+
+1587758086 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\entities\goblin.cpp
+	"entities/Goblin.h"
+	"skills/Attack.h"
+	"skills/Fire.h"
+	"utility.h"
+
+1587758274 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\entities\human.cpp
+	"Human.h"
+	"skills/Attack.h"
+	"skills/useItem.h"
+
+1587757655 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\entities\human.h
+	"Entity.h"
 

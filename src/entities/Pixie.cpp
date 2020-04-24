@@ -1,13 +1,13 @@
 #include "entities/Pixie.h"
-#include "skills/Skill.h"
 #include "skills/Attack.h"
+#include "skills/Ice.h"
 #include "utility.h"
 
 Pixie::Pixie()
 {
     name = "Pixie";
-    health = 4;
-    max_health = 4;
+    health = 2;
+    max_health = 2;
 
     attack = 1;
     defense = 1;
@@ -15,11 +15,12 @@ Pixie::Pixie()
     magic_defense = 1;
 
     level = 1;
-    experience_points = 2;
+    experience_points = 1;
 
     skills.push_back(new Attack());
+    skills.push_back(new Ice());
 
-    resistances.push_back("fire");
+    resistances.push_back("ice");
 }
 
 Pixie::~Pixie()
@@ -32,11 +33,16 @@ void Pixie::fundraise_AI (Entity* player) {
 }
 
 void Pixie::AI (std::vector<Entity*> combatants) {
-    const int ATTACK = 0;
+    const int ATTACK = 0, ICE = 1;
 
     int target_index = target_random_enemy (combatants);
     std::vector <Entity*> targets;
     targets.push_back (combatants [target_index]);
 
-    this->skills [ATTACK]->use (this, targets);
+    int random_number = utility::random_bounded (1,3);
+    if (random_number < 3) {
+        this->skills [ATTACK]->use (this, targets);
+    } else {
+        this->skills [ICE]->use (this, targets);
+    }
 }
