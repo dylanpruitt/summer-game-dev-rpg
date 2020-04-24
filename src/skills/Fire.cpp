@@ -18,7 +18,7 @@ void Fire::use (Entity *user, std::vector <Entity*> targets) {
     const int BASE_DAMAGE = 1;
 
     if (user->faction == "player") {
-        std::vector <Entity*> player_targets = find_targets (targets, 1);
+        std::vector <Entity*> player_targets = user->find_targets (targets, 1);
         user->damage_magic (player_targets [0], BASE_DAMAGE, type);
     } else {
         user->damage_magic (targets [0], BASE_DAMAGE, type);

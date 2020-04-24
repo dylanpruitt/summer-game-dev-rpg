@@ -66,7 +66,12 @@ class Entity
         virtual void fundraise_AI (Entity* player);
 
         void print_info ();
+
+        std::vector <Entity*> find_targets (std::vector <Entity*> combatants, int number_of_targets);
+
     protected:
+        int get_player_target (std::vector <Entity*> combatants);
+
         int target_lowest_health_enemy (std::vector <Entity*> combatants);
 
         int target_highest_health_enemy (std::vector <Entity*> combatants);

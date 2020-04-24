@@ -21,7 +21,7 @@ void useItem::use (Entity *user, std::vector <Entity*> targets) {
         Skill::use (user, targets);
 
         int item_index = return_used_item_index (user);
-        std::vector <Entity*> player_targets = find_targets (targets, 1);
+        std::vector <Entity*> player_targets = user->find_targets (targets, 1);
 
         user->items [item_index]->use (user, player_targets);
         user->items.erase (user->items.begin() + item_index);

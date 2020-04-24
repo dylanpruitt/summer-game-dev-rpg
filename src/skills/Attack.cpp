@@ -18,7 +18,7 @@ void Attack::use (Entity *user, std::vector <Entity*> targets) {
     Skill::use (user, targets);
 
     if (user->faction == "player") {
-        std::vector <Entity*> player_targets = find_targets (targets, 1);
+        std::vector <Entity*> player_targets = user->find_targets (targets, 1);
         user->damage (player_targets [0], BASE_DAMAGE, type);
     } else {
         user->damage (targets [0], BASE_DAMAGE, type);

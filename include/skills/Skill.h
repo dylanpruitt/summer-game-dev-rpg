@@ -19,11 +19,6 @@ class Skill
         int energy_cost;
 
         virtual void use (Entity* user, std::vector <Entity*> targets);
-
-        std::vector <Entity*> find_targets (std::vector <Entity*> combatants, int number_of_targets);
-
-    protected:
-        int get_player_target (std::vector <Entity*> combatants);
     private:
 };
 

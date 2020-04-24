@@ -10,8 +10,6 @@ class Game
         virtual ~Game();
 
         void battle (std::vector <Entity*> players, std::vector <Entity*> encounter);
-    protected:
-
     private:
         bool faction_members_remain (std::string faction, std::vector <Entity*> combatants);
 
