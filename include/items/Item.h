@@ -1,7 +1,6 @@
 #ifndef ITEM_H
 #define ITEM_H
-#include <vector>
-#include "Entity.h"
+#include "entities/Entity.h"
 
 class Item
 {

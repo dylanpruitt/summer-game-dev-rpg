@@ -6,6 +6,7 @@
 #include "statuses/Status.h"
 
 class Skill;
+class Item;
 
 class Entity
 {
@@ -40,8 +41,8 @@ class Entity
         int gold = 0;
 
         std::vector <Skill*> skills;
-
         std::vector <Status*> statuses;
+        std::vector <Item*> items;
 
         std::vector <std::string> resistances;
         std::vector <std::string> weaknesses;

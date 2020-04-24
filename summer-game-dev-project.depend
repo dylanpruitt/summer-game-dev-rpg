@@ -6,7 +6,7 @@
 	"utility.h"
 	<iostream>
 
-1587702452 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\entities\entity.h
+1587750832 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\entities\entity.h
 	<vector>
 	<string>
 	<random>
@@ -76,11 +76,13 @@
 	<math.h>
 	<random>
 
-1587748438 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\main.cpp
+1587752120 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\main.cpp
 	<iostream>
 	<random>
 	"Game.h"
 	"entities/Pixie.h"
+	"items/Fireworks.h"
+	"skills/useItem.h"
 	"utility.h"
 
 1587702028 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\game.h
@@ -98,5 +100,31 @@
 	"Attack.h"
 
 1587748053 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\skills\attack.h
+	"Skill.h"
+
+1587750755 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\items\item.cpp
+	"Item.h"
+	<iostream>
+
+1587750840 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\items\item.h
+	"entities/Entity.h"
+
+1587751190 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\items\fireworks.h
+	"Item.h"
+
+1587751442 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\items\fireworks.cpp
+	"Fireworks.h"
+	"utility.h"
+
+1587752202 source:c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\skills\useitem.cpp
+	"useItem.h"
+	"items/Item.h"
+	"utility.h"
+	<iostream>
+
+1587751714 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\src\skills\useitem.h
+	"Skill.h"
+
+1587751714 c:\users\dylan\documents\programming projects 2020\summer-game-dev-project\include\skills\useitem.h
 	"Skill.h"
 

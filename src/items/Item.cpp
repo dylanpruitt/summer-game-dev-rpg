@@ -1,4 +1,5 @@
 #include "Item.h"
+#include <iostream>
 
 Item::Item()
 {
@@ -12,5 +13,4 @@ Item::~Item()
 
 void Item::use (Entity* user, std::vector <Entity*> targets) {
     std::cout << user->name << " used " << name << "!" << std::endl;
-    user->energy -= energy_cost;
 }
