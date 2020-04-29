@@ -19,6 +19,7 @@
 					<Add directory="src/skills" />
 					<Add directory="include/statuses" />
 					<Add directory="include/entities" />
+					<Add directory="include/tiles" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -33,6 +34,8 @@
 					<Add directory="include/items" />
 					<Add directory="src/skills" />
 					<Add directory="include/statuses" />
+					<Add directory="include/tiles" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -62,6 +65,8 @@
 		<Unit filename="include/statuses/Status.h" />
 		<Unit filename="include/statuses/dodgeStatus.h" />
 		<Unit filename="include/textGraphics.h" />
+		<Unit filename="include/tileMap.h" />
+		<Unit filename="include/tiles/Tile.h" />
 		<Unit filename="include/utility.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Game.cpp" />
@@ -83,6 +88,8 @@
 		<Unit filename="src/statuses/Status.cpp" />
 		<Unit filename="src/statuses/dodgeStatus.cpp" />
 		<Unit filename="src/textGraphics.cpp" />
+		<Unit filename="src/tileMap.cpp" />
+		<Unit filename="src/tiles/Tile.cpp" />
 		<Unit filename="src/utility.cpp" />
 		<Extensions>
 			<code_completion />

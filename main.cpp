@@ -11,9 +11,12 @@
 #include "skills/Dodge.h"
 #include "utility.h"
 #include "textGraphics.h"
+#include "tileMap.h"
 
 int main()
 {
+    tileMap t; for (int i = 0; i < 9; i++) { t.tiles.push_back (new Tile()); } t.map_size = 3; t.tiles[1]->battle_fought = true; t.tiles[4]->battle_fought = true; t.render ();
+
     Game g;
     Human pix; pix.faction = "player"; std::vector<Entity*> p; p.push_back(&pix);
     std::vector<Entity*> q;

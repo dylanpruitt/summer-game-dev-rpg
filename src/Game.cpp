@@ -24,9 +24,7 @@ void Game::battle (std::vector <Entity*> players, std::vector <Entity*> encounte
         for (int i = 0; i < players.size (); i++) {
             if (players [i]->is_alive () && faction_members_remain ("enemy", combatants)) {
                 players [i]->energy += 3;
-                if (players [i]->energy > players [i]->max_energy) {
-                    players [i]->energy = players [i]->max_energy;
-                }
+                if (players [i]->energy > players [i]->max_energy) { players [i]->energy = players [i]->max_energy; }
 
                 std::vector <Status*> remaining_statuses;
                 for (int j = 0; j < players [i]->statuses.size (); j++) {
